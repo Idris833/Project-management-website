@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./Logos/single-logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script>
+        function openSlideMenu() {
+          document.getElementById("menu").style.width = "250px";
+          document.getElementById("content").style.marginLeft = "250px";
+          document.getElementById("logo").style.marginLeft = "100px";
+        }
+        function closeSlideMenu() {
+          document.getElementById("menu").style.width = "0px";
+          document.getElementById("content").style.marginLeft = "0px";
+          document.getElementById("logo").style.marginLeft = "-100px";
+        }
+      </script>
+</head>
+<body>
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>    
+    
+        <div class="main-css">
+            
+            
+                <h1>Imprint</h1>
+                <h3>Emails:</h3>
+                <ul>
+                    <li>Ilyas Benyamna: i.benyamna(at)jacobs-university.de</li>
+                    <li>Ujjwal Khadka : u.khadka(at)jacobs-university.de</li>
+                    <li>Idris Chendid : i.chendid(at)jacobs-university.de</li>
+                    <li>Saad Aboujid  : s.aboujid(at)jacobs-university.de</li>
+                </ul>
+                <h3>Notice:</h3>
+                <p>
+                    This website is student lab work and does not necessarily reflect Jacobs University Bremen opinions. 
+                    Jacobs University Bremen does not endorse this site, nor is it checked by Jacobs University
+                    Bremen regularly, nor is it part of the official Jacobs University Bremen web presence. 
+                </p>
+                <p>
+                    For each external link existing on this website, we initially have checked that the target page
+                    does not contain contents which is illegal wrt. German jurisdiction. However, as we have no influence on such contents, 
+                    this may change without our notice. Therefore we deny any responsibility for the websites referenced through our external links from here. 
+                </p>
+                <p> 
+                    No information conflicting with GDPR is stored in the server.
+                </p>
+           
+    
+        </div>
+        <div id="menu" class="navbar-left" >
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <a href="index.html">Home</a>
+            <a href="./project.html">Project</a>
+            <a href="./imprint.html">Imprint</a>
+            <a href="./maintenance.html">Maintenance Pages</a>
+        </div>
+      <a href="./index.html"><img id="logo" src="./Logos/name-logo.png" alt="TODODAY" /></a>
+        </div>
+</body>
+</html>

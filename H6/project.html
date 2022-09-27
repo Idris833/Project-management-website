@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./Logos/single-logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script>
+        function openSlideMenu() {
+          document.getElementById("menu").style.width = "250px";
+          document.getElementById("content").style.marginLeft = "250px";
+          document.getElementById("logo").style.marginLeft = "100px";
+        }
+        function closeSlideMenu() {
+          document.getElementById("menu").style.width = "0px";
+          document.getElementById("content").style.marginLeft = "0px";
+          document.getElementById("logo").style.marginLeft = "-100px";
+        }
+      </script>
+</head>
+<body>
+    
+   
+        
+        <div id="content">
+            
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span> 
+            <div class="project-main-section">
+                   
+                
+                <div class="project-name">
+                    <form >
+                        <!-- <label for="projectName">Choose a Project:</label> -->
+                        <select class="project-select" name="projectName" id="projectName">
+                          <option value="Project 1">Project 1</option>
+                          <option value="Project 2">Project 2</option>
+                          <option value="Project 3">Project 3</option>
+                        </select>
+                      </form>
+                </div>
+
+                <div class="grid-flex">
+                    <div class="grid-boxes">
+
+                        <div class="task-title">
+                            <h2>Scheduled Tasks</h2>
+                        </div>
+                        <div class="grid-boxes-tasks">
+                            <div class="task">
+                                <p>Connect to MySQL databse</p>
+                                <p>2021-09-12</p>
+                            </div>
+                            <div class="task">
+                                <p>Create DDL boundaries</p>
+                                <p>2021-10-26</p>
+                            </div>
+                            <div class="task">
+                                <p>Populate the database</p>
+                                <p>2022-01-10</p>
+                            </div>
+                            <div class="task">
+                                <p>Create new queries</p>
+                                <p>2022-02-20</p>
+                            </div>
+                            <div class="task">
+                                <p>Debug PHP</p>
+                                <p>2022-03-14</p>
+                            </div>
+                            <div class="task">
+                                <p>Buy domain name</p>
+                                <p>2022-03-16</p>
+                            </div>
+                            <div class="task">
+                                <p>Debug Python Django</p>
+                                <p>2022-03-14</p>
+                            </div>
+                        </div>
+                        
+    
+    
+                    </div>
+                    <div class="grid-boxes">
+
+                        <div class="task-title">
+                            <h2>Ongoing Tasks</h2>
+                        </div>
+                        
+                        <div class="grid-boxes-tasks">
+                            <div class="task">
+                                <p>Create an overlay</p>
+                                <p>2021-10-30</p>
+                            </div>
+                            <div class="task">
+                                <p>Create Navbar</p>
+                                <p>2021-11-20</p>
+                            </div>
+                        </div>
+                        
+    
+    
+                    </div>
+                    <div class="grid-boxes">
+
+                        <div class="task-title">
+                            <h2>Completed Task</h2>
+                        </div>
+                        
+                        <div class="grid-boxes-tasks">
+                            <div class="task">
+                                <p>Fix ER diagram</p>
+                                <p>2021-09-12</p>
+                            </div>
+                        </div>
+                        
+    
+    
+                    </div>
+                </div>
+
+               
+                
+            </div>
+            <div id="menu" class="navbar-left" >
+                <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <a href="index.html">Home</a>
+                <a href="./project.html">Project</a>
+                <a href="./imprint.html">Imprint</a>
+                <a href="./maintenance.html">Maintenance Pages</a>
+            </div>
+          <a href="./index.html"><img id="logo" src="./Logos/name-logo.png" alt="TODODAY" /></a>
+        </div>
+        
+        
+        
+    
+    
+    
+</body>
+</html>

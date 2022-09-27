@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./Logos/single-logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    /><script>
+        function openSlideMenu() {
+          document.getElementById("menu").style.width = "250px";
+          document.getElementById("content").style.marginLeft = "250px";
+          document.getElementById("logo").style.marginLeft = "100px";
+        }
+        function closeSlideMenu() {
+          document.getElementById("menu").style.width = "0px";
+          document.getElementById("content").style.marginLeft = "0px";
+          document.getElementById("logo").style.marginLeft = "-100px";
+        }
+      </script>
+</head>
+<body>
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        
+    
+        <div class="main-css">
+
+            <h1>Maintenance Pages</h1>
+            <p>It is recommended to enter the data in the order below</p>
+
+            <ul>
+                <li><a href="./PHPtesting/maintenance_pages/user.php"><p>User</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/employee.php"><p>Employee</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/project.php"><p>Project</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/manager.php"><p>Manager</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/team.php"><p>Team</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/role.php"><p>Role</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/team_member.php"><p>Team Member</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/task.php"><p>Task</p></li>        
+                <li><a href="./PHPtesting/maintenance_pages/assigned.php"><p>assigned</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/third_party.php"><p>Third Party</p></li> 
+                <li><a href="./PHPtesting/maintenance_pages/helps_or_requests.php"><p>helps_or_requests</p></li>    
+            </ul>
+           
+    
+        </div>
+        <div id="menu" class="navbar-left" >
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="index.html">Home</a>
+            <a href="./project.html">Project</a>
+            <a href="./imprint.html">Imprint</a>
+            <a href="./maintenance.html">Maintenance Pages</a>
+        </div>
+      <a href="./index.html"><img id="logo" src="./Logos/name-logo.png" alt="TODODAY" /></a>
+        </div>
+</body>
+</html>
