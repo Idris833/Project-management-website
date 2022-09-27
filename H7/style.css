@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.image-css{
+    height: 40px;
+}
+
+.navbar-left{
+    border: 1px solid #d3d3d3;
+    width: fit-content;
+    height: 100vh;
+    padding: 0px 14px;
+}
+
+.navbar-left > * {
+    display: flex;
+    margin: 40px 0px;
+}
+
+.main-css {
+    margin-left: 80px; 
+    margin-right: 40px;
+}
+
+.project-main-section{
+    margin: 24px 40px;
+    font-size: 18px;
+}
+
+
+.project-select{
+    font-size: 32px;
+}
+
+.grid-boxes{
+    border: 1px solid black;
+    margin: 14px 14px 14px 0;
+    min-width: 240px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.grid-boxes-tasks{
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-left: 10px;
+}
+
+.task{
+    border-bottom: 1px solid lightgray;
+}
+
+.task-title{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.grid-flex{
+    display: flex;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.feedback-header{
+    text-align: center;
+}
+.message{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 84px;
+}
+.previous-page{
+    text-align: center;
+}
+.goto-maintenanc-page{
+    text-align: center;
+}
+.new-user-feedback{
+    text-align: center;
+}
