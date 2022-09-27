@@ -1,0 +1,57 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['user']))
+    {
+        header("location:./PHPtesting/Login/login_page.php");
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div style="display: flex;">
+        <div class="navbar-left" >
+            <div><img class="image-css" src="./Logos/name-logo.png" alt="jpts" /></div>    
+            <div><a href="index.html"><p>Home</p></a></div>
+            <div><a href="./project.html"><p>Project</p></a></div>
+            <a href="./imprint.html"><div><p>Imprint</p></div></a>
+            <div><a href="./maintenance.php"><p>Maintenance Pages</p></a></div>
+            
+        </div>
+    
+        <div class="main-css">
+            <?php
+            if(isset($_SESSION['user']))
+            {
+                echo "<h2> Logged in as ". $_SESSION['user'] . "</h2>";
+                echo '<a href="PHPtesting/Login/logout.php?logout=true">Logout</a>';
+            }
+            ?>
+            <h1>Maintenance Pages</h1>
+            <p>It is recommended to enter the data in the order below</p>
+
+            <ul>
+                <li><a href="./PHPtesting/maintenance_pages/user.php"><p>User</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/employee.php"><p>Employee</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/project.php"><p>Project</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/manager.php"><p>Manager</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/team.php"><p>Team</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/role.php"><p>Role</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/team_member.php"><p>Team Member</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/task.php"><p>Task</p></li>        
+                <li><a href="./PHPtesting/maintenance_pages/assigned.php"><p>assigned</p></li>
+                <li><a href="./PHPtesting/maintenance_pages/third_party.php"><p>Third Party</p></li> 
+                <li><a href="./PHPtesting/maintenance_pages/helps_or_requests.php"><p>helps_or_requests</p></li>    
+            </ul>
+           
+    
+        </div>
+        </div>
+</body>
+</html>
